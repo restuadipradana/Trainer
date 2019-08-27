@@ -64,7 +64,7 @@ void loop() {
   // Display Text
   display.setTextSize(1);
   display.setTextColor(WHITE);
-  display.setCursor(0,0;
+  display.setCursor(0,0);
   display.println("Tombol yang ditekan: ");
   if (up == HIGH)
   {

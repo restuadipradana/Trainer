@@ -20,6 +20,7 @@ int atas = 34;
 int bawah = 35;
 int kiri = 36;
 int kanan = 39;
+String kondisi = "";
 
 void setup() {
   Serial.begin(9600);
@@ -68,26 +69,26 @@ void loop() {
   display.println("Tombol yang ditekan: ");
   if (up == HIGH)
   {
-    display.println("UP");
+    kondisi = "UP";
   }
   else if (down == HIGH)
   {
-    display.println("DOWN");
+    kondisi = "DOWN";
   }
   else if (left == HIGH)
-  {
-    display.println("LEFT");
+  { 
+    kondisi = "LEFT";
   }
   else if (right == HIGH)
-  {
-    display.println("RIGHT");
+  {  
+    kondisi = "RIGHT";
   }
 
-
+  display.println(kondisi);
 
 
 
   display.display();
-  delay(150);
-  display.clearDisplay();
+  delay(70);
+
 }

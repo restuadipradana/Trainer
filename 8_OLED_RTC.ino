@@ -41,9 +41,6 @@ void setup() {
 
   // Clear the buffer
   display.clearDisplay();
-
-  display.display();
-  delay(2000);
  
 }
 
@@ -63,11 +60,11 @@ void loop() {
   display.print(':');
   display.println(now.second(), DEC);
   display.println(daysOfTheWeek[now.dayOfTheWeek()]);
-  display.print(now.year(), DEC);
-  display.print('/');
-  display.print(now.month(), DEC);
-  display.print('/');
   display.print(now.day(), DEC);
+  display.print('/');
+  display.print(now.month());
+  display.print('/');
+  display.print(now.year(), DEC);
   display.println();
   display.display();
   delay(500);

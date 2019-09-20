@@ -68,12 +68,12 @@ void loop() {
   display.clearDisplay();
 
   // Display Text
-  display.setTextSize(1);
+  display.setTextSize(2);
   display.setTextColor(WHITE);
   display.setCursor(0,0);
-  display.print("Analog input: ");
+  display.println("Value: ");
   display.println(value);
-  display.println("Tombol yang ditekan: ");
+  display.println("Tombol: ");
   if (up == HIGH)
   {
     kondisi = "UP";
